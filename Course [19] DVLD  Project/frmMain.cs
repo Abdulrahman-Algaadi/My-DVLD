@@ -120,7 +120,7 @@ namespace Course__19__DVLD___Project
 
         private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new ReNewDrivingLicense(_User);
+            Form frm = new ReNewDrivingLicense();
             frm.ShowDialog();
         }
 

@@ -4,3 +4,9 @@ D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccessDataBa
 D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccessDataBase.csproj.CoreCompileInputs.cache
 D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.dll
 D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\bin\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\bin\Debug\clsDataAccess.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\obj\Debug\clsDataAccessDataBase.csproj.AssemblyReference.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\obj\Debug\clsDataAccessDataBase.csproj.CoreCompileInputs.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\obj\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Data Access\obj\Debug\clsDataAccess.pdb

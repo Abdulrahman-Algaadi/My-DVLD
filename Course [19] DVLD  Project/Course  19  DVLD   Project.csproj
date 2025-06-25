@@ -57,6 +57,12 @@
     <Compile Include="AddNewAppointmentTest.Designer.cs">
       <DependentUpon>AddNewAppointmentTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrFilterLicenseByIDAndShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrFilterLicenseByIDAndShow.Designer.cs">
+      <DependentUpon>ctrFilterLicenseByIDAndShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmShowLicenseInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +340,9 @@
     </Compile>
     <EmbeddedResource Include="AddNewAppointmentTest.resx">
       <DependentUpon>AddNewAppointmentTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrFilterLicenseByIDAndShow.resx">
+      <DependentUpon>ctrFilterLicenseByIDAndShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowLicenseInfo.resx">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>

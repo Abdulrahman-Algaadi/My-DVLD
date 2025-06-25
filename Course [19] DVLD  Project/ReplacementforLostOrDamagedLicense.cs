@@ -133,7 +133,7 @@ namespace Course__19__DVLD___Project
                     _NewLicense.IsActive = _Issued.IsActive;
                     _NewLicense.IssueReason = rdbDamaged.Checked ? (clsLicense.enIssueReason.LostReplacement) :(clsLicense.enIssueReason.DamagedReplacement);
                     _NewLicense.CreatedByUserID =_User.UserID;
-                    if (_NewLicense.IssueLicense())
+                    if (_NewLicense._AddNewLicense())
                     {
                         MessageBox.Show($"The Replacement License is Issued Seccusssfully With ID Of {_NewLicense.LicenseID}");
 

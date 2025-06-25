@@ -720,7 +720,13 @@ Select * From InternationalLicenses Where IssuedUsingLocalLicenseID=@IssuedUsing
                     IssueDate = (DateTime)reader["IssueDate"];
                     ExpirationDate = (DateTime)reader["ExpirationDate"];
                     PaidFees = (decimal)reader["PaidFees"];
+                    if (reader["Notes"]==DBNull.Value)
+                    {
+                        Notes = "";
+                    }
+                    else
                     Notes = (string)reader["Notes"];
+
                     CreatedByUserID = (int)reader["CreatedByUserID"];
                     IssueReason = (byte)reader["IssueReason"];
                     IsActive = Convert.ToBoolean(reader["IsActive"]);
