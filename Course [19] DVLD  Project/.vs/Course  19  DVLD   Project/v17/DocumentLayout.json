@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\renewdrivinglicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:renewdrivinglicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\replacementforlostordamagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:replacementforlostordamagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\replacementforlostordamagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:replacementforlostordamagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\ctrapplicationinfoforreplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:ctrapplicationinfoforreplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16CD0BFE-BCFF-44D3-9ABB-671832A6ADB5}|..\\Class Business\\clsLogic.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\class business\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +24,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\renewdrivinglicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:renewdrivinglicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,51 +57,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReNewDrivingLicense.cs",
-              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReNewDrivingLicense.cs",
-              "RelativeDocumentMoniker": "ReNewDrivingLicense.cs",
-              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReNewDrivingLicense.cs",
-              "RelativeToolTip": "ReNewDrivingLicense.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAAD4AAAAtAAAA",
+              "DocumentIndex": 3,
+              "Title": "clsLicense.cs",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Class Business\\clsLicense.cs",
+              "RelativeDocumentMoniker": "..\\Class Business\\clsLicense.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Class Business\\clsLicense.cs",
+              "RelativeToolTip": "..\\Class Business\\clsLicense.cs",
+              "ViewState": "AQIAAAEBAAAAAAAAAAAIwCQBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T19:04:46.76Z",
+              "WhenOpened": "2025-06-25T21:12:49.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReNewDrivingLicense.cs [Design]",
-              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReNewDrivingLicense.cs",
-              "RelativeDocumentMoniker": "ReNewDrivingLicense.cs",
-              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReNewDrivingLicense.cs [Design]",
-              "RelativeToolTip": "ReNewDrivingLicense.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "ctrApplicationInfoForReplacement.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ctrApplicationInfoForReplacement.cs",
+              "RelativeDocumentMoniker": "ctrApplicationInfoForReplacement.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ctrApplicationInfoForReplacement.cs [Design]",
+              "RelativeToolTip": "ctrApplicationInfoForReplacement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T19:10:37.386Z",
+              "WhenOpened": "2025-06-25T20:56:31.982Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ReplacementforLostOrDamagedLicense.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReplacementforLostOrDamagedLicense.cs",
+              "RelativeDocumentMoniker": "ReplacementforLostOrDamagedLicense.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReplacementforLostOrDamagedLicense.cs [Design]",
+              "RelativeToolTip": "ReplacementforLostOrDamagedLicense.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:36:22.078Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReplacementforLostOrDamagedLicense.cs",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReplacementforLostOrDamagedLicense.cs",
+              "RelativeDocumentMoniker": "ReplacementforLostOrDamagedLicense.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\ReplacementforLostOrDamagedLicense.cs",
+              "RelativeToolTip": "ReplacementforLostOrDamagedLicense.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAuwJoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:32:47.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
               "RelativeDocumentMoniker": "frmMain.cs",
               "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs [Design]",
               "RelativeToolTip": "frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:13:19.369Z"
+              "WhenOpened": "2025-06-24T14:13:19.369Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
               "RelativeDocumentMoniker": "frmMain.cs",
               "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
               "RelativeToolTip": "frmMain.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAIAwwEQAAAApAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAD4v4AAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:13:22.895Z"
+              "WhenOpened": "2025-06-24T14:13:22.895Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -126,7 +126,7 @@ namespace Course__19__DVLD___Project
 
         private void replacementForLostOrDamagedToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new ReplacementForLostOrDamagedLicense(_User);
+            Form frm = new ReplacementForLostOrDamagedLicense();
             frm.ShowDialog();
         }
 

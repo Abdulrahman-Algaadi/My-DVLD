@@ -244,6 +244,55 @@ namespace clsLogic
 
             return NewLicense;
         }
+        public clsLicense Replace(enIssueReason IssueReason, int CreatedByUserID)
+        {
+
+
+            //First Create Applicaiton 
+            clsApplications Application = new clsApplications();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+
+            Application.ApplicationTypeID = (IssueReason == enIssueReason.DamagedReplacement) ?
+                (int)clsApplications.enApplicationType.ReplaceDamagedDrivingLicense :
+                (int)clsApplications.enApplicationType.ReplaceLostDrivingLicense;
+
+            Application.ApplicationStatus = clsApplications.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.ApplicationFees = clsApplicationTypes.FindApplicationTypeByID(Application.ApplicationTypeID).ApplicationFees;
+            Application.CreatedByUserID = CreatedByUserID;
+
+            if (!Application.Save())
+            {
+                return null;
+            }
+
+            clsLicense NewLicense = new clsLicense();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClassID = this.LicenseClassID;
+            NewLicense.IssueDate = DateTime.Now;
+            NewLicense.ExpirationDate = this.ExpirationDate;
+            NewLicense.Notes = this.Notes;
+            NewLicense.PaidFees = 0;// no fees for the license because it's a replacement.
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = IssueReason;
+            NewLicense.CreatedByUserID = CreatedByUserID;
+
+
+
+            if (!NewLicense.Save())
+            {
+                return null;
+            }
+
+            //we need to deactivate the old License.
+            this.DeActivate();
+
+            return NewLicense;
+        }
 
 
     }
