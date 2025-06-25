@@ -1,0 +1,18 @@
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\obj\Debug\clsLogic.csproj.AssemblyReference.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\obj\Debug\clsLogic.csproj.CoreCompileInputs.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\bin\Debug\clsLogic.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\bin\Debug\clsLogic.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\obj\Debug\clsLogic.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\obj\Debug\clsLogic.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\bin\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\bin\Debug\clsDataAccess.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsLogic\obj\Debug\clsLogic.csproj.Up2Date
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\bin\Debug\clsLogic.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\bin\Debug\clsLogic.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\bin\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\bin\Debug\clsDataAccess.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\obj\Debug\clsLogic.csproj.AssemblyReference.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\obj\Debug\clsLogic.csproj.CoreCompileInputs.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\obj\Debug\clsLogic.csproj.Up2Date
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\obj\Debug\clsLogic.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Class Business\obj\Debug\clsLogic.pdb

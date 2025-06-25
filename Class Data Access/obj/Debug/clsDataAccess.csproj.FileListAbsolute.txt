@@ -1,0 +1,6 @@
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\bin\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\bin\Debug\clsDataAccess.pdb
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.csproj.AssemblyReference.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.csproj.CoreCompileInputs.cache
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.dll
+D:\Dr.Mohammed Abu Hadhoud\Course 19\clsDataAccess\obj\Debug\clsDataAccess.pdb

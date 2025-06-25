@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\licenses\\local license\\controls\\ctrshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:licenses\\local license\\controls\\ctrshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\licenses\\local license\\controls\\ctrshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:licenses\\local license\\controls\\ctrshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ctrShowLicenseInfo.cs",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "RelativeDocumentMoniker": "Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "RelativeToolTip": "Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwBAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:49:43.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrShowLicenseInfo.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "RelativeDocumentMoniker": "Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\Course  19  DVLD   Project\\Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs [Design]",
+              "RelativeToolTip": "..\\..\\Course  19  DVLD   Project\\Licenses\\Local License\\Controls\\ctrShowLicenseInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:54:38.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\Course  19  DVLD   Project\\frmMain.cs [Design]",
+              "RelativeToolTip": "..\\..\\Course  19  DVLD   Project\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:13:19.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAewGIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:13:22.895Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 271,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
