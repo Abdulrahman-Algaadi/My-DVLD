@@ -108,12 +108,6 @@
     <Compile Include="People\User Controls\ctrAddNewPerson.Designer.cs">
       <DependentUpon>ctrAddNewPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrApplicationInfoForReplacement.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ctrApplicationInfoForReplacement.Designer.cs">
-      <DependentUpon>ctrApplicationInfoForReplacement.cs</DependentUpon>
-    </Compile>
     <Compile Include="ctrDetainInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -149,12 +143,6 @@
     </Compile>
     <Compile Include="Applications\Local Application\Controls\ctrLALAndApplicationDaetails.Designer.cs">
       <DependentUpon>ctrLALAndApplicationDaetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ctrNewApplicationLicenseInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ctrNewApplicationLicenseInfo.Designer.cs">
-      <DependentUpon>ctrNewApplicationLicenseInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Licenses\International License\Controls\ctrShowInternationalLicense.cs">
       <SubType>UserControl</SubType>
@@ -365,9 +353,6 @@
     <EmbeddedResource Include="People\User Controls\ctrAddNewPerson.resx">
       <DependentUpon>ctrAddNewPerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ctrApplicationInfoForReplacement.resx">
-      <DependentUpon>ctrApplicationInfoForReplacement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ctrDetainInfo.resx">
       <DependentUpon>ctrDetainInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,9 +370,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Local Application\Controls\ctrLALAndApplicationDaetails.resx">
       <DependentUpon>ctrLALAndApplicationDaetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ctrNewApplicationLicenseInfo.resx">
-      <DependentUpon>ctrNewApplicationLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\International License\Controls\ctrShowInternationalLicense.resx">
       <DependentUpon>ctrShowInternationalLicense.cs</DependentUpon>
