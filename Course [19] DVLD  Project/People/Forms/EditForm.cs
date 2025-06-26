@@ -20,7 +20,7 @@ namespace Course__19__DVLD___Project
          
 
               ctrShowPersonDetail1.PersonID = PersonID;
-              ctrShowPersonDetail1.LoadPersonData();
+     
         }
 
        

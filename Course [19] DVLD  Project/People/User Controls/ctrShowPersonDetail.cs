@@ -45,11 +45,7 @@ namespace Course__19__DVLD___Project
 
 
 
-        private string _FullName()
-        {
-            return _Person.FirstName + " " + _Person.SecondName + " " + _Person.ThirdName + " " + _Person.LastName;
-        }
-        public void LoadPersonData()
+        private void LoadPersonData()
         {
             _Person = clsPerson.FindPerson(PersonID);
             if (_Person == null)
@@ -58,7 +54,7 @@ namespace Course__19__DVLD___Project
                 return;
             }
 
-            lblName.Text = _FullName();
+            lblName.Text = _Person.FullName();
             lblDateOfBirth.Text = _Person.BirthDate.ToShortDateString();
             lblEmail.Text = _Person.Email;
             lblPhone.Text = _Person.Phone;

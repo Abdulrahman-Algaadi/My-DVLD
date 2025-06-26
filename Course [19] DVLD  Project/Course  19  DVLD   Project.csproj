@@ -69,6 +69,12 @@
     <Compile Include="frmShowLicenseInfo.Designer.cs">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShowPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPersonInfo.Designer.cs">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Controls\ctrScheduleTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -334,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowLicenseInfo.resx">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPersonInfo.resx">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\Controls\ctrScheduleTest.resx">
       <DependentUpon>ctrScheduleTest.cs</DependentUpon>

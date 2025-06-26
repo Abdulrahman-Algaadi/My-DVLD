@@ -60,6 +60,7 @@ namespace Course__19__DVLD___Project
             set
             {
                 _Person_ID = value;
+                txtFilter.Text = _Person_ID.ToString();
             
             }
         }

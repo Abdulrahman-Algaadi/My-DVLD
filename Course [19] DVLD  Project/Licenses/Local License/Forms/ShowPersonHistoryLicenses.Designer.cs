@@ -34,21 +34,21 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblRecords = new System.Windows.Forms.Label();
             this.dgvLocalLicense = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblInterRecords = new System.Windows.Forms.Label();
             this.dgvLicenseHistory = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
             this.ctrShowPersonDetail1 = new Course__19__DVLD___Project.ctrShowPersonDetail();
             this.ctrFilterPerson_ADD1 = new Course__19__DVLD___Project.ctrFilterPerson_ADD();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicense)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseHistory)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -83,7 +83,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // lblRecords
             // 
@@ -109,6 +108,21 @@
             this.dgvLocalLicense.Size = new System.Drawing.Size(1106, 205);
             this.dgvLocalLicense.TabIndex = 1;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(227, 36);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(226, 32);
+            this.showToolStripMenuItem.Text = "Show License Info";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.lblInterRecords);
@@ -120,7 +134,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // lblInterRecords
             // 
@@ -169,28 +182,14 @@
             // 
             // ctrFilterPerson_ADD1
             // 
+            this.ctrFilterPerson_ADD1.FilterEnabled = true;
             this.ctrFilterPerson_ADD1.FilterTextBoxValue = "";
             this.ctrFilterPerson_ADD1.Location = new System.Drawing.Point(219, 37);
             this.ctrFilterPerson_ADD1.Name = "ctrFilterPerson_ADD1";
             this.ctrFilterPerson_ADD1.PersonID = 0;
+            this.ctrFilterPerson_ADD1.ShowAddPerson = true;
             this.ctrFilterPerson_ADD1.Size = new System.Drawing.Size(974, 111);
             this.ctrFilterPerson_ADD1.TabIndex = 0;
-            this.ctrFilterPerson_ADD1.Load += new System.EventHandler(this.ctrFilterPerson_ADD1_Load);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(227, 36);
-            // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(226, 32);
-            this.showToolStripMenuItem.Text = "Show License Info";
-            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
             // ShowPersonHistoryLicenses
             // 
@@ -210,10 +209,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicense)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseHistory)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

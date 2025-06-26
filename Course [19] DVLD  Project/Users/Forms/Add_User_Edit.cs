@@ -24,7 +24,11 @@ namespace Course__19__DVLD___Project
         {
             InitializeComponent();
             _User = clsUser.FindUserByID(UserID);
-            PersonID = _User.PersonID;
+            if (_User!=null)
+            {
+                PersonID = _User.PersonID;
+            }
+  
             Mode = (UserID == -1) ? enMode.AddNew : enMode.Update;
             _LoadData();
       

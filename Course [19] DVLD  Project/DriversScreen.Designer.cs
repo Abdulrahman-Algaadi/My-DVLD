@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label1;
             this.label2 = new System.Windows.Forms.Label();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.cbFilter = new System.Windows.Forms.ComboBox();
             this.dgvDrivers = new System.Windows.Forms.DataGridView();
             this.lblRecords = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showPerosnDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showLicensePersonHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +96,7 @@
             this.dgvDrivers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvDrivers.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvDrivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDrivers.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvDrivers.Location = new System.Drawing.Point(60, 293);
             this.dgvDrivers.Name = "dgvDrivers";
             this.dgvDrivers.ReadOnly = true;
@@ -108,6 +114,29 @@
             this.lblRecords.Size = new System.Drawing.Size(0, 23);
             this.lblRecords.TabIndex = 5;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showPerosnDetailsToolStripMenuItem,
+            this.showLicensePersonHistoryToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(315, 101);
+            // 
+            // showPerosnDetailsToolStripMenuItem
+            // 
+            this.showPerosnDetailsToolStripMenuItem.Name = "showPerosnDetailsToolStripMenuItem";
+            this.showPerosnDetailsToolStripMenuItem.Size = new System.Drawing.Size(314, 32);
+            this.showPerosnDetailsToolStripMenuItem.Text = "Show Perosn Details";
+            this.showPerosnDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPerosnDetailsToolStripMenuItem_Click);
+            // 
+            // showLicensePersonHistoryToolStripMenuItem
+            // 
+            this.showLicensePersonHistoryToolStripMenuItem.Name = "showLicensePersonHistoryToolStripMenuItem";
+            this.showLicensePersonHistoryToolStripMenuItem.Size = new System.Drawing.Size(314, 32);
+            this.showLicensePersonHistoryToolStripMenuItem.Text = "Show License Person History ";
+            this.showLicensePersonHistoryToolStripMenuItem.Click += new System.EventHandler(this.showLicensePersonHistoryToolStripMenuItem_Click);
+            // 
             // DriversScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -123,6 +152,7 @@
             this.Text = "DriversScreen";
             this.Load += new System.EventHandler(this.DriversScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +165,8 @@
         private System.Windows.Forms.ComboBox cbFilter;
         private System.Windows.Forms.DataGridView dgvDrivers;
         private System.Windows.Forms.Label lblRecords;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showPerosnDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showLicensePersonHistoryToolStripMenuItem;
     }
 }

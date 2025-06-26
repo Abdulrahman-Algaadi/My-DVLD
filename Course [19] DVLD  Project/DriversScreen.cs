@@ -95,5 +95,19 @@ namespace Course__19__DVLD___Project
             dgvDrivers.DataSource = _dtDriver;
             lblRecords.Text = $"# Records{dgvDrivers.RowCount}";
         }
+
+        private void showPerosnDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmShowPersonInfo((int)dgvDrivers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+            DriversScreen_Load(null,null);
+        }
+
+        private void showLicensePersonHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowPersonHistoryLicenses f = new ShowPersonHistoryLicenses((int)dgvDrivers.CurrentRow.Cells[1].Value);
+            f.ShowDialog();
+            DriversScreen_Load(null,null);
+        }
     }
 }
