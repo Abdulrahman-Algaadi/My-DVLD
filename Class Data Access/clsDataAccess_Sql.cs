@@ -876,7 +876,7 @@ FROM   Applications INNER JOIN
             {
                 connection.Open();
                 SqlDataReader Reader = Command.ExecuteReader();
-                if (Reader.Read())
+                if (Reader.HasRows)
                 {
                     Dt.Load(Reader);
                 }

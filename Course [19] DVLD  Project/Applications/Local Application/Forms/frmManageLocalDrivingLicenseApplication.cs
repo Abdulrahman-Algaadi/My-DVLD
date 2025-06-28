@@ -239,9 +239,9 @@ namespace Course__19__DVLD___Project
             int LocalID = (int)dgvApplications.CurrentRow.Cells[0].Value;
             _LocalDrivingLicense = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseAppID(LocalID);
             PassedTest = clsTestAppointments.TestsThatAlreadyPassed(LocalID);
-            if (_LocalDrivingLicense.ApplicationInfo.ApplicationStatus == (clsApplications.enApplicationStatus.Completed) &&PassedTest==3) {
+            if (_LocalDrivingLicense.ApplicationInfo.ApplicationStatus == (clsApplications.enApplicationStatus.New) &&PassedTest==3) {
 
-                Form frm = new IssueLicenseForm(LocalID);
+                IssueLicenseForm frm = new IssueLicenseForm(LocalID);
                 frm.ShowDialog();
 
             }
