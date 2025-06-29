@@ -144,13 +144,13 @@ namespace Course__19__DVLD___Project
 
         private void releaseLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new Release_Detained_License(_User);
+            Form frm = new Release_Detained_License();
             frm.ShowDialog();
         }
 
         private void manageDetainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new ManageDetainedLicenses(_User);
+            Form frm = new ManageDetainedLicenses();
             frm.ShowDialog();
         }
 

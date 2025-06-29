@@ -76,8 +76,6 @@ D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.Add_User_Edit.resources
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ChangePassWord.resources
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrAddNewPerson.resources
-D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrDetainInfo.resources
-D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrFilterLicense.resources
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrFilterPerson_ADD.resources
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrInternationalDrivingLicense.resources
 D:\Dr.Mohammed Abu Hadhoud\Course 19\My DVLD\Course [19] DVLD  Project\obj\Debug\Course__19__DVLD___Project.ctrLALAndApplicationDaetails.resources

@@ -301,7 +301,7 @@ namespace clsDataAccess
             finally { connection.Close(); }
             return Dt;
         }
-        public static bool SaveReleaseDetails(int DetainedID, DateTime ReleaseDate
+        public static bool ReleaseDetainLicense(int DetainedID
             , int ReleasedByUserID, int ReleasedByApplicationID)
         {
             int RowsAffected = 0;
@@ -313,7 +313,7 @@ namespace clsDataAccess
             SqlCommand Command = new SqlCommand(Query, connection);
             Command.Parameters.AddWithValue("@DetainID", DetainedID);
             Command.Parameters.AddWithValue("@IsReleased", 1);
-            Command.Parameters.AddWithValue("@ReleaseDate", ReleaseDate);
+            Command.Parameters.AddWithValue("@ReleaseDate", DateTime.Now);
             Command.Parameters.AddWithValue("@ReleaseApplicationID", ReleasedByApplicationID);
             Command.Parameters.AddWithValue("@ReleasedByUserID", ReleasedByUserID);
             try
@@ -698,7 +698,8 @@ Select * From InternationalLicenses Where IssuedUsingLocalLicenseID=@IssuedUsing
             return LicenseID;
         }
         public static bool FindLicenseByLicenseID(ref int ApplicationID, int LicenseID, ref int DriverID
-              , ref int CreatedByUserID, ref int LicenseClassID, ref DateTime IssueDate, ref DateTime ExpirationDate, ref string Notes, ref bool IsActive,
+              , ref int CreatedByUserID, ref int LicenseClassID, ref DateTime IssueDate,
+            ref DateTime ExpirationDate, ref string Notes, ref bool IsActive,
         ref byte IssueReason, ref decimal PaidFees)
         {
 
@@ -726,6 +727,7 @@ Select * From InternationalLicenses Where IssuedUsingLocalLicenseID=@IssuedUsing
                     }
                     else
                     Notes = (string)reader["Notes"];
+                    
 
                     CreatedByUserID = (int)reader["CreatedByUserID"];
                     IssueReason = (byte)reader["IssueReason"];

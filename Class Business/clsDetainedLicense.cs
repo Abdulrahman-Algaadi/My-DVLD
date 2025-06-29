@@ -21,7 +21,7 @@ namespace clsLogic
         public bool IsReleased { get; set;}
         public  DateTime ReleaseDate { get; set; }
         public int ReleasedByUserID { get; set; }
-
+        
         public clsDetainedLicense()
         {
             this.LicenseID = 0;
@@ -82,10 +82,7 @@ namespace clsLogic
             }
             return null;
         }
-       public bool SaveReleaseDetails()
-        {
-            return clsDataAccess_Sql.SaveReleaseDetails( this.DetainedID,this.ReleaseDate,this.ReleasedByUserID,this.ReleasedByApplicationID);
-        }
+     
         public static DataTable GetAllDetainedLicense()
         {
             return clsDataAccess_Sql.GetAllDetainedLicense();
@@ -94,5 +91,12 @@ namespace clsLogic
         {
             return clsDataAccess_Sql.FilterDetainedBy(ColumnName, FilterBy);
         }
+
+        public bool ReleaseDetainedLicense(int ReleasedByUserID, int ReleaseApplicationID)
+        {
+            return clsDataAccess_Sql.ReleaseDetainLicense(this.DetainedID,
+                   ReleasedByUserID, ReleaseApplicationID);
+        }
+
     }
 }

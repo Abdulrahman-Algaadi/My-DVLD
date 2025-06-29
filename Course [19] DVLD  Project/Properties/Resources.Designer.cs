@@ -303,6 +303,16 @@ namespace Course__19__DVLD___Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap driving_license {
+            get {
+                object obj = ResourceManager.GetObject("driving-license", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye {
             get {
                 object obj = ResourceManager.GetObject("eye", resourceCulture);
@@ -373,6 +383,16 @@ namespace Course__19__DVLD___Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hand {
+            get {
+                object obj = ResourceManager.GetObject("hand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hand_note {
             get {
                 object obj = ResourceManager.GetObject("hand_note", resourceCulture);
@@ -386,6 +406,16 @@ namespace Course__19__DVLD___Project.Properties {
         internal static System.Drawing.Bitmap hand_note1 {
             get {
                 object obj = ResourceManager.GetObject("hand_note1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hand1 {
+            get {
+                object obj = ResourceManager.GetObject("hand1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,6 +513,26 @@ namespace Course__19__DVLD___Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap license__1_ {
+            get {
+                object obj = ResourceManager.GetObject("license (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap license__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("license (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap member {
             get {
                 object obj = ResourceManager.GetObject("member", resourceCulture);
@@ -496,6 +546,46 @@ namespace Course__19__DVLD___Project.Properties {
         internal static System.Drawing.Bitmap member__1_ {
             get {
                 object obj = ResourceManager.GetObject("member (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_product {
+            get {
+                object obj = ResourceManager.GetObject("new-product", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_product__1_ {
+            get {
+                object obj = ResourceManager.GetObject("new-product (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_product__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("new-product (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_product__2_ {
+            get {
+                object obj = ResourceManager.GetObject("new-product (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,6 +793,16 @@ namespace Course__19__DVLD___Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap personal_information__1_ {
+            get {
+                object obj = ResourceManager.GetObject("personal-information (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap phone {
             get {
                 object obj = ResourceManager.GetObject("phone", resourceCulture);
@@ -716,6 +816,16 @@ namespace Course__19__DVLD___Project.Properties {
         internal static System.Drawing.Bitmap picography_vintage_mercedes_car_black_white_small_2 {
             get {
                 object obj = ResourceManager.GetObject("picography-vintage-mercedes-car-black-white-small-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile__2_ {
+            get {
+                object obj = ResourceManager.GetObject("profile (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

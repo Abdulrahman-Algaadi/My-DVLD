@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,45 +14,20 @@ namespace Course__19__DVLD___Project
 {
     public partial class Release_Detained_License : Form
     {
-        clsDetainedLicense _DetainedLicense;
-        public decimal DetainFees { get; set; }
-        public int LicenseIDP { get; set; }
-        clsApplications _Application;
-        clsLicense _IssuedLicense;
-        clsApplications _ReleasedApp;
 
-        clsLocalDrivingLicenseApplication _Local, _NewLocal;
-
-        clsUser _User;
-        public Release_Detained_License(clsUser User)
+        int _SelectedLicenseID = -1;
+      
+        public Release_Detained_License()
         {
             InitializeComponent();
-            ctrFilterLicense1.DataBack += _DataBackFilter;
-            _User = User;
+        
         }
-        private void _DataBackFilter(object obj, int LicenseID)
+        public Release_Detained_License(int LicenseID)
         {
-            _IssuedLicense = clsLicense.FindLicenseByLicenseID(LicenseID);
-            if (_IssuedLicense != null)
-            {
-                LicenseIDP = LicenseID;
-                _Local = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseByApplicationID(_IssuedLicense.ApplicationID);
-                _Application = clsApplications.FindApplicationByApplicationID(_IssuedLicense.ApplicationID);
-                ctrShowLicenseInfo1.LoadLicenseData(LicenseID);
-                llLicenseHistory.Enabled = true;
-                ctrDetainInfo1.LicenseID = LicenseID;
-                if (!clsDetainedLicense.IsActiveLicense(LicenseID))
-                {
-                    btnSave.Enabled = true;
+            InitializeComponent();
+            ctrFilterLicenseByIDAndShow1.LoadInfo(LicenseID);
+            ctrFilterLicenseByIDAndShow1.FilterEnabled = false;
 
-                }
-                else
-                {
-                    btnSave.Enabled = false;
-                    MessageBox.Show($"The License With {LicenseID} is Active , You Can't Release it ..");
-                }
-
-            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -59,65 +35,16 @@ namespace Course__19__DVLD___Project
             this.Close();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-
-        {
-            clsApplicationTypes _ApplicationTypes;
-            _DetainedLicense = clsDetainedLicense.FindDetainedLicenseByLicenseID(LicenseIDP);
-            _ReleasedApp = new clsApplications();
-            if (MessageBox.Show($"Are You Sure To Release The License Of ID {LicenseIDP}", "Release License", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                _ReleasedApp.ApplicationTypeID = 5;
-                //_ReleasedApp.ApplicationTypeStatus = 3;
-                _ReleasedApp.LastStatusDate = DateTime.Now;
-                _ReleasedApp.ApplicationDate = DateTime.Now;
-                _ApplicationTypes = clsApplicationTypes.FindApplicationTypeByID(_ReleasedApp.ApplicationTypeID);
-                _ReleasedApp.ApplicationFees = _ApplicationTypes.ApplicationFees;
-                _ReleasedApp.ApplicantPersonID = _Application.ApplicantPersonID;
-                _ReleasedApp.ClassTypeID = _Local.ClassTypeID;
-                _ReleasedApp.CreatedByUserID = _User.UserID;
-
-                if (_ReleasedApp.Save())
-                {
-                    _DetainedLicense.ReleasedByApplicationID = _ReleasedApp.ApplicationID;
-                    _DetainedLicense.ReleasedByUserID = _User.UserID;
-                    _DetainedLicense.ReleaseDate = DateTime.Now;
-
-                    if (_DetainedLicense.SaveReleaseDetails())
-                    {
-                        _IssuedLicense.Activate();
-                        MessageBox.Show("The License Is Released Seccussfully .. ");
-                        ctrDetainInfo1.ReleasedApplicationID = _ReleasedApp.ApplicationID;
-                        llShowLicenseInfo.Enabled = true;
-                        btnSave.Enabled = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License Is not Released Seccussfully .. ");
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("Could't Make An Application !! ");
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("Releace is Canceled ..");
-            }
-        }
-
+      
         private void llLicenseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form frm = new ShowPersonHistoryLicenses(_Local.LocalDrivingLicenseAppID);
+            Form frm = new ShowPersonHistoryLicenses(ctrFilterLicenseByIDAndShow1.License.DriverInfo.PersonID);
             frm.ShowDialog();
         }
 
         private void llShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form frm = new frmShowLocalApplicationDetail(_Local.LocalDrivingLicenseAppID);
+            Form frm = new frmShowLicenseInfo(_SelectedLicenseID);
             frm.ShowDialog();
         }
 
@@ -127,6 +54,61 @@ namespace Course__19__DVLD___Project
             llLicenseHistory.Enabled = false;
             llShowLicenseInfo.Enabled = false;
             this.StartPosition = FormStartPosition.CenterScreen;
+            btnSave.Enabled = false;
+        }
+
+        private void Release_Detained_License_Activated(object sender, EventArgs e)
+        {
+            ctrFilterLicenseByIDAndShow1.FilterFocus();
+        }
+
+        private void ctrFilterLicenseByIDAndShow1_OnLicenseSelected(int obj)
+        {
+            _SelectedLicenseID = obj;
+            lblLicenseID.Text =_SelectedLicenseID.ToString();
+            if (_SelectedLicenseID==-1)
+            {
+                return;
+            }
+            llLicenseHistory.Enabled = _SelectedLicenseID != -1;
+            if (!clsDetainedLicense.IsLicenseDetained(_SelectedLicenseID))
+            {
+                MessageBox.Show("Selected License i is not detained, choose another one.", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            lblDetainID.Text = ctrFilterLicenseByIDAndShow1.License.DetainInfo.DetainedID.ToString();
+            lblDetainDate.Text  =ctrFilterLicenseByIDAndShow1.License.DetainInfo.DetainDate.ToString();
+            lblCreatedBy.Text =clsGlobal.User.UserName.ToString();
+            lblApplicationFees.Text = clsApplicationTypes.FindApplicationTypeByID((int)clsApplications.enApplicationType.ReleaseDetainedDrivingLicsense).ApplicationFees.ToString();
+            lblFineFees.Text = ctrFilterLicenseByIDAndShow1.License.DetainInfo.FineFees.ToString();
+            lblTotalFees.Text = (Convert.ToDecimal(lblFineFees.Text) + Convert.ToDecimal(lblApplicationFees.Text)).ToString();
+
+            btnSave.Enabled = true;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to release this detained  license?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
+
+            int ApplicationID = -1;
+
+            bool IsReleased = ctrFilterLicenseByIDAndShow1.License.ReleaseDetainedLicense(clsGlobal.User.UserID,ref ApplicationID);
+            lblReleaseByAppID.Text = ApplicationID.ToString();
+
+            if (!IsReleased)
+            {
+                MessageBox.Show("Faild to to release the Detain License", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            MessageBox.Show("Detained License released Successfully ", "Detained License Released", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            btnSave.Enabled = false;
+            ctrFilterLicenseByIDAndShow1.FilterEnabled = false;
+            llShowLicenseInfo.Enabled = true;
 
         }
     } 

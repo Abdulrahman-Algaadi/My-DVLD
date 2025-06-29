@@ -34,7 +34,7 @@
             this.llLicenseHistory = new System.Windows.Forms.LinkLabel();
             this.llShowLicenseInfo = new System.Windows.Forms.LinkLabel();
             this.ctrInternationalDrivingLicense1 = new Course__19__DVLD___Project.ctrInternationalDrivingLicense();
-            this.ctrFilterLicense1 = new Course__19__DVLD___Project.ctrFilterLicense();
+          
             this.ctrShowLicenseInfo1 = new Course__19__DVLD___Project.ctrShowLicenseInfo();
             this.SuspendLayout();
             // 
@@ -111,11 +111,7 @@
             // 
             // ctrFilterLicense1
             // 
-            this.ctrFilterLicense1.Location = new System.Drawing.Point(2, 58);
-            this.ctrFilterLicense1.Name = "ctrFilterLicense1";
-            this.ctrFilterLicense1.Size = new System.Drawing.Size(982, 141);
-            this.ctrFilterLicense1.TabIndex = 9;
-            this.ctrFilterLicense1.Load += new System.EventHandler(this.ctrFilterLicense1_Load);
+
             // 
             // ctrShowLicenseInfo1
             // 
@@ -133,7 +129,7 @@
             this.Controls.Add(this.llShowLicenseInfo);
             this.Controls.Add(this.ctrInternationalDrivingLicense1);
             this.Controls.Add(this.llLicenseHistory);
-            this.Controls.Add(this.ctrFilterLicense1);
+
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnIssue);
             this.Controls.Add(this.label1);
@@ -153,7 +149,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnIssue;
-        private ctrFilterLicense ctrFilterLicense1;
+    
         private System.Windows.Forms.LinkLabel llLicenseHistory;
         private ctrInternationalDrivingLicense ctrInternationalDrivingLicense1;
         private System.Windows.Forms.LinkLabel llShowLicenseInfo;

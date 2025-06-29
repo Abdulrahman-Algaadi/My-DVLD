@@ -51,16 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewAppointmentTest.cs">
+    <Compile Include="Tests\Forms\AddNewAppointmentTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewAppointmentTest.Designer.cs">
+    <Compile Include="Tests\Forms\AddNewAppointmentTest.Designer.cs">
       <DependentUpon>AddNewAppointmentTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrFilterLicenseByIDAndShow.cs">
+    <Compile Include="Licenses\Controls\ctrFilterLicenseByIDAndShow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ctrFilterLicenseByIDAndShow.Designer.cs">
+    <Compile Include="Licenses\Controls\ctrFilterLicenseByIDAndShow.Designer.cs">
       <DependentUpon>ctrFilterLicenseByIDAndShow.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShowLicenseInfo.cs">
@@ -69,10 +69,10 @@
     <Compile Include="frmShowLicenseInfo.Designer.cs">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmShowPersonInfo.cs">
+    <Compile Include="People\Forms\frmShowPersonInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmShowPersonInfo.Designer.cs">
+    <Compile Include="People\Forms\frmShowPersonInfo.Designer.cs">
       <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\Controls\ctrScheduleTest.cs">
@@ -114,18 +114,6 @@
     <Compile Include="People\User Controls\ctrAddNewPerson.Designer.cs">
       <DependentUpon>ctrAddNewPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrDetainInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ctrDetainInfo.Designer.cs">
-      <DependentUpon>ctrDetainInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Licenses\Controls\ctrFilterLicense.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Licenses\Controls\ctrFilterLicense.Designer.cs">
-      <DependentUpon>ctrFilterLicense.cs</DependentUpon>
-    </Compile>
     <Compile Include="People\User Controls\ctrFilterPerson_ADD.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,16 +150,16 @@
     <Compile Include="People\User Controls\ctrShowPersonDetail.Designer.cs">
       <DependentUpon>ctrShowPersonDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetainLicenseScreen.cs">
+    <Compile Include="Licenses\Detain License\Forms\DetainLicenseScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetainLicenseScreen.Designer.cs">
+    <Compile Include="Licenses\Detain License\Forms\DetainLicenseScreen.Designer.cs">
       <DependentUpon>DetainLicenseScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="DriversScreen.cs">
+    <Compile Include="Drivers\DriversScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DriversScreen.Designer.cs">
+    <Compile Include="Drivers\DriversScreen.Designer.cs">
       <DependentUpon>DriversScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="People\Forms\EditForm.cs">
@@ -260,16 +248,16 @@
     <Compile Include="Release Detained License.Designer.cs">
       <DependentUpon>Release Detained License.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReNewDrivingLicense.cs">
+    <Compile Include="Applications\Re New License\ReNewDrivingLicense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReNewDrivingLicense.Designer.cs">
+    <Compile Include="Applications\Re New License\ReNewDrivingLicense.Designer.cs">
       <DependentUpon>ReNewDrivingLicense.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReplacementforLostOrDamagedLicense.cs">
+    <Compile Include="Applications\Replacement Or Damaged License\ReplacementforLostOrDamagedLicense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReplacementforLostOrDamagedLicense.Designer.cs">
+    <Compile Include="Applications\Replacement Or Damaged License\ReplacementforLostOrDamagedLicense.Designer.cs">
       <DependentUpon>ReplacementforLostOrDamagedLicense.cs</DependentUpon>
     </Compile>
     <Compile Include="Licenses\International License\Forms\ShowInternationalLicenseInfo.cs">
@@ -326,16 +314,16 @@
     <Compile Include="Tests\Forms\VisionTestScreen.Designer.cs">
       <DependentUpon>VisionTestScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddNewAppointmentTest.resx">
+    <EmbeddedResource Include="Tests\Forms\AddNewAppointmentTest.resx">
       <DependentUpon>AddNewAppointmentTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ctrFilterLicenseByIDAndShow.resx">
+    <EmbeddedResource Include="Licenses\Controls\ctrFilterLicenseByIDAndShow.resx">
       <DependentUpon>ctrFilterLicenseByIDAndShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowLicenseInfo.resx">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmShowPersonInfo.resx">
+    <EmbeddedResource Include="People\Forms\frmShowPersonInfo.resx">
       <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\Controls\ctrScheduleTest.resx">
@@ -356,12 +344,6 @@
     <EmbeddedResource Include="People\User Controls\ctrAddNewPerson.resx">
       <DependentUpon>ctrAddNewPerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ctrDetainInfo.resx">
-      <DependentUpon>ctrDetainInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Licenses\Controls\ctrFilterLicense.resx">
-      <DependentUpon>ctrFilterLicense.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="People\User Controls\ctrFilterPerson_ADD.resx">
       <DependentUpon>ctrFilterPerson_ADD.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,10 +362,10 @@
     <EmbeddedResource Include="People\User Controls\ctrShowPersonDetail.resx">
       <DependentUpon>ctrShowPersonDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetainLicenseScreen.resx">
+    <EmbeddedResource Include="Licenses\Detain License\Forms\DetainLicenseScreen.resx">
       <DependentUpon>DetainLicenseScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DriversScreen.resx">
+    <EmbeddedResource Include="Drivers\DriversScreen.resx">
       <DependentUpon>DriversScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Forms\EditForm.resx">
@@ -438,10 +420,10 @@
     <EmbeddedResource Include="Release Detained License.resx">
       <DependentUpon>Release Detained License.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReNewDrivingLicense.resx">
+    <EmbeddedResource Include="Applications\Re New License\ReNewDrivingLicense.resx">
       <DependentUpon>ReNewDrivingLicense.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReplacementforLostOrDamagedLicense.resx">
+    <EmbeddedResource Include="Applications\Replacement Or Damaged License\ReplacementforLostOrDamagedLicense.resx">
       <DependentUpon>ReplacementforLostOrDamagedLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\International License\Forms\ShowInternationalLicenseInfo.resx">
@@ -756,6 +738,42 @@
       <Project>{16cd0bfe-bcff-44d3-9abb-671832a6adb5}</Project>
       <Name>clsLogic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Licenses\Detain License\Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal-information %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving-license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

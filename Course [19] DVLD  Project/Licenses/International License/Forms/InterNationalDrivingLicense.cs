@@ -26,8 +26,8 @@ namespace Course__19__DVLD___Project
         public InterNationalDrivingLicense(clsUser User )
         {
             InitializeComponent();
-            ctrFilterLicense1.DataBack += _DataBackOfLicense;
-           _User = User;    
+           // ctrFilterLicense1.DataBack += _DataBackOfLicense;
+           //_User = User;    
         }
 
 

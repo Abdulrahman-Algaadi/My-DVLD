@@ -13,11 +13,14 @@ namespace Course__19__DVLD___Project
 {
     public partial class ManageDetainedLicenses : Form
     {
-        clsUser _User;
-        public ManageDetainedLicenses(clsUser User)
+      
+        int _PersonID = -1;
+        private static DataTable _DetainedLicense;
+
+        public ManageDetainedLicenses()
         {
             InitializeComponent();
-            _User = User;
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -43,51 +46,53 @@ namespace Course__19__DVLD___Project
             this.AutoSize = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             cbFilter.SelectedIndex = 0;
-            _LoadData();
+            _DetainedLicense = clsDetainedLicense.GetAllDetainedLicense();
+            dgvDetainedLicenses.DataSource = _DetainedLicense;
+
+            _PersonID = clsLicense.FindLicenseByLicenseID((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value).DriverInfo.PersonID;
         }
 
         private void showPersonDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsPerson _Person = clsPerson.FindPerson((string)dgvDetainedLicenses.CurrentRow.Cells[6].Value);
-            Form form = new ShowDetailForm(_Person.PersonID);
-            form.ShowDialog();
-            _LoadData();
+
+            Form frm = new frmShowPersonInfo(_PersonID);
+            frm.ShowDialog();
+            ManageDetainedLicenses_Load(null, null);
         }
 
         private void showLicenseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsLicense _Issued = clsLicense.FindLicenseByLicenseID((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value);
-            clsLocalDrivingLicenseApplication _Local = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseByApplicationID(_Issued.ApplicationID);
-            Form frm = new frmShowLocalApplicationDetail(_Local.LocalDrivingLicenseAppID);
+            Form frm = new frmShowLicenseInfo((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value);
             frm.ShowDialog();
-            _LoadData();
+            ManageDetainedLicenses_Load(null, null);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form form = new Release_Detained_License(_User);
+            Form form = new Release_Detained_License();
             form.ShowDialog();
         }
 
         private void showPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsLicense _Issued = clsLicense.FindLicenseByLicenseID((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value);
-            clsLocalDrivingLicenseApplication _Local = clsLocalDrivingLicenseApplication.FindLocalDrivingLicenseByApplicationID(_Issued.ApplicationID);
-            Form frm = new ShowPersonHistoryLicenses(_Local.LocalDrivingLicenseAppID);
+            Form frm = new ShowPersonHistoryLicenses(_PersonID);
             frm.ShowDialog();
-            _LoadData();
+            ManageDetainedLicenses_Load(null, null);
         }
 
         private void cbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbFilter.SelectedIndex==0)
             {
-                txtFilter.Enabled=false;
+                txtFilter.Visible=false;
             }
             else
             {
-                txtFilter.Enabled=true;
+                txtFilter.Visible=true;
+                txtFilter.Focus();
             }
+
+
         }
 
         private void txtFilter_TextChanged(object sender, EventArgs e)
@@ -97,39 +102,65 @@ namespace Course__19__DVLD___Project
             switch (cbFilter.SelectedIndex)
             {
                 case 1:
-                    ColumnName = "D_ID";
-                    FilterBy= txtFilter.Text;
+                    ColumnName = "DetainID";
+                
                     break;
 
                 case 2:
-                    ColumnName = "L_ID";
-                    FilterBy = txtFilter.Text;
+                    ColumnName = "LicenseID";
+                   
                     break;
 
                 case 3:
 
-                    ColumnName = "Is_Released";
-                    FilterBy = txtFilter.Text;
+                    ColumnName = "IsReleased";
+                  
                     break;
 
                 case 4:
-                    ColumnName = "N_No";
-                    FilterBy = txtFilter.Text;
+                    ColumnName = "NationalNo";
+                  
                     break;
 
                 case 5:
                     ColumnName = "FullName";
-                    FilterBy = txtFilter.Text;
+                  
                     break;
 
                 case 6:
-                    ColumnName = "Release_App_ID";
-                    FilterBy = txtFilter.Text;
+                    ColumnName = "ReleaseApplicationID";
+           
                     break;
                   
             }
-            dgvDetainedLicenses.DataSource = clsDetainedLicense.FilterDetainedBy(ColumnName,FilterBy);
+            FilterBy = txtFilter.Text;
+            if (string.IsNullOrEmpty(FilterBy)||cbFilter.SelectedIndex==0)
+            {
+                _DetainedLicense.DefaultView.RowFilter = "";
+                lblRecord.Text = "# Records : "+_DetainedLicense.Rows.Count.ToString();
+                return;
+            }
+            if (cbFilter.SelectedIndex==1||cbFilter.SelectedIndex==2||cbFilter.SelectedIndex==6)
+            {
+                _DetainedLicense.DefaultView.RowFilter = string.Format("[{0}] = {1}",ColumnName,FilterBy);
+            }
+            else
+            {
+                _DetainedLicense.DefaultView.RowFilter = string.Format("[{0}] like '{1}%'", ColumnName, FilterBy);
+            }
+            lblRecord.Text = "# Records : " + _DetainedLicense.Rows.Count.ToString();
+        }
 
+        private void releaceLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Release_Detained_License((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+            ManageDetainedLicenses_Load(null, null);
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            releaceLicenseToolStripMenuItem.Enabled = !(bool)dgvDetainedLicenses.CurrentRow.Cells[3].Value;
         }
     }
 }

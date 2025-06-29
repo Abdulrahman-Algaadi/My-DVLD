@@ -17,17 +17,18 @@ namespace clsLogic
         public enum enIssueReason { FirstTime = 1, Renew = 2, DamagedReplacement = 3, LostReplacement = 4 };
         public int LicenseID { get; set; }
         public int ApplicationID { get; set; }
-        public int DriverID {  get; set; }
-        public int PersonID {  get; set; }
-        public int CreatedByUserID {  get; set; }
-        public int LicenseClassID {  get; set; }
+        public int DriverID { get; set; }
+        public int PersonID { get; set; }
+        public int CreatedByUserID { get; set; }
+        public int LicenseClassID { get; set; }
         public DateTime IssueDate { get; set; }
         public DateTime ExpirationDate { get; set; }
-        public string Notes {  get; set; }
-        public Decimal PaidFees {  get; set; }
-        public bool IsActive {  get; set; }
-        public enIssueReason IssueReason {  get; set; }
+        public string Notes { get; set; }
+        public Decimal PaidFees { get; set; }
+        public bool IsActive { get; set; }
+        public enIssueReason IssueReason { get; set; }
         public clsDriver DriverInfo { get; set; }
+        public clsDetainedLicense DetainInfo { get; set; }
         public string IssueReasonText
         {
             get
@@ -60,52 +61,53 @@ namespace clsLogic
             this.ApplicationID = -1;
             this.DriverID = -1;
             this.PersonID = -1;
-    
+
             this.CreatedByUserID = -1;
             this.LicenseClassID = -1;
             this.IssueDate = DateTime.Now;
             this.ExpirationDate = DateTime.Now;
-            this.Notes="";
+            this.Notes = "";
             this.IsActive = false;
             this.IssueReason = 0;
             this.PaidFees = 0;
         }
-        private clsLicense(int LicenseID,int ApplicationID,int DriverID,int CreatedByUserID,
-            int LicenseClassID,DateTime IssueDate,DateTime ExpirationDate,string Notes,bool IsActive,enIssueReason IssueReason,decimal PaidFees)
+        private clsLicense(int LicenseID, int ApplicationID, int DriverID, int CreatedByUserID,
+            int LicenseClassID, DateTime IssueDate, DateTime ExpirationDate, string Notes, bool IsActive, enIssueReason IssueReason, decimal PaidFees)
         {
-            this.LicenseID= LicenseID;
-        this.ApplicationID=ApplicationID;
-            this.DriverID=DriverID;
-            this.CreatedByUserID=CreatedByUserID;
-            this.LicenseClassID=LicenseClassID;
-            this.IssueDate=IssueDate;
-            this.ExpirationDate=ExpirationDate;
-            this.Notes=Notes;
-            this.IsActive =IsActive;
+            this.LicenseID = LicenseID;
+            this.ApplicationID = ApplicationID;
+            this.DriverID = DriverID;
+            this.CreatedByUserID = CreatedByUserID;
+            this.LicenseClassID = LicenseClassID;
+            this.IssueDate = IssueDate;
+            this.ExpirationDate = ExpirationDate;
+            this.Notes = Notes;
+            this.IsActive = IsActive;
             this.IssueReason = IssueReason;
-           this.PaidFees=PaidFees;
+            this.PaidFees = PaidFees;
             DriverInfo = clsDriver.FindByDriverID(this.DriverID);
-            LicenseClassInfo =clsLicenseClass.FindLicenceClassByID(this.LicenseClassID);
+            LicenseClassInfo = clsLicenseClass.FindLicenceClassByID(this.LicenseClassID);
+            DetainInfo = clsDetainedLicense.FindDetainedLicenseByLicenseID(this.LicenseID);
 
 
         }
         public static clsLicense FindLicenseByApplicationID(int ApplicationID)
         {
-            int LicenseID=-1,DriverID=-1, CreatedByUserID=-1,
+            int LicenseID = -1, DriverID = -1, CreatedByUserID = -1,
              LicenseClassID = -1;
             DateTime IssueDate = DateTime.Now;
             DateTime ExpirationDate = DateTime.Now;
             string Notes = "";
-            bool IsActive =false;
+            bool IsActive = false;
             byte IssueReason = 1; decimal PaidFees = 0;
-            if (clsDataAccess_Sql.FindLicenseByApplicationID(ApplicationID,ref LicenseID,ref DriverID
-                ,ref CreatedByUserID,ref LicenseClassID,ref IssueDate,ref ExpirationDate,ref Notes,ref IsActive,ref IssueReason,ref PaidFees))
+            if (clsDataAccess_Sql.FindLicenseByApplicationID(ApplicationID, ref LicenseID, ref DriverID
+                , ref CreatedByUserID, ref LicenseClassID, ref IssueDate, ref ExpirationDate, ref Notes, ref IsActive, ref IssueReason, ref PaidFees))
             {
-                return new clsLicense(LicenseID,ApplicationID,DriverID,CreatedByUserID,LicenseClassID,IssueDate,ExpirationDate,Notes,IsActive,(enIssueReason)IssueReason,PaidFees);
+                return new clsLicense(LicenseID, ApplicationID, DriverID, CreatedByUserID, LicenseClassID, IssueDate, ExpirationDate, Notes, IsActive, (enIssueReason)IssueReason, PaidFees);
             }
             return null;
 
-        
+
         }
         public static clsLicense FindLicenseByLicenseID(int LicenseID)
         {
@@ -116,7 +118,7 @@ namespace clsLogic
             string Notes = "";
             bool IsActive = false;
             byte IssueReason = 0; decimal PaidFees = 0;
-            if (clsDataAccess_Sql.FindLicenseByLicenseID(ref ApplicationID,  LicenseID, ref DriverID
+            if (clsDataAccess_Sql.FindLicenseByLicenseID(ref ApplicationID, LicenseID, ref DriverID
                 , ref CreatedByUserID, ref LicenseClassID, ref IssueDate, ref ExpirationDate, ref Notes, ref IsActive, ref IssueReason, ref PaidFees))
             {
                 return new clsLicense(LicenseID, ApplicationID, DriverID, CreatedByUserID, LicenseClassID, IssueDate, ExpirationDate, Notes, IsActive, (enIssueReason)IssueReason, PaidFees);
@@ -125,7 +127,7 @@ namespace clsLogic
 
 
         }
-        public static clsLicense FindLicenseByLicenseID(int LicenseID,int LicenseClass)
+        public static clsLicense FindLicenseByLicenseID(int LicenseID, int LicenseClass)
         {
             int ApplicationID = -1, DriverID = -1, CreatedByUserID = -1,
              LicenseClassID = -1;
@@ -134,7 +136,7 @@ namespace clsLogic
             string Notes = "";
             bool IsActive = false;
             byte IssueReason = 0; decimal PaidFees = 0;
-            if (clsDataAccess_Sql.FindLicenseByLicenseID(LicenseClass,ref ApplicationID, LicenseID, ref DriverID
+            if (clsDataAccess_Sql.FindLicenseByLicenseID(LicenseClass, ref ApplicationID, LicenseID, ref DriverID
                 , ref CreatedByUserID, ref LicenseClassID, ref IssueDate, ref ExpirationDate, ref Notes, ref IsActive, ref IssueReason, ref PaidFees))
             {
                 return new clsLicense(LicenseID, ApplicationID, DriverID, CreatedByUserID, LicenseClassID, IssueDate, ExpirationDate, Notes, IsActive, (enIssueReason)IssueReason, PaidFees);
@@ -148,16 +150,16 @@ namespace clsLogic
             return clsDataAccess_Sql.IsLicenseExists(LicenseID);
 
         }
-        
+
         public static DataTable GetDriverLicenses(int DriverID)
         {
             return clsDataAccess_Sql.GetDriverLicenses(DriverID);
         }
-        public  bool _AddNewLicense()
+        public bool _AddNewLicense()
         {
-            this.LicenseID = clsDataAccess_Sql.AddNewLicense( 
-                this.CreatedByUserID,this.DriverID,this.ApplicationID,this.LicenseClassID,
-                this.IssueDate,this.ExpirationDate,this.Notes,(byte)this.IssueReason,this.PaidFees,this.IsActive);
+            this.LicenseID = clsDataAccess_Sql.AddNewLicense(
+                this.CreatedByUserID, this.DriverID, this.ApplicationID, this.LicenseClassID,
+                this.IssueDate, this.ExpirationDate, this.Notes, (byte)this.IssueReason, this.PaidFees, this.IsActive);
             return this.LicenseID != -1;
         }
         public bool DeActivate()
@@ -193,7 +195,7 @@ namespace clsLogic
                     {
                         return false;
                     }
-             
+
             }
 
             return false;
@@ -310,6 +312,33 @@ namespace clsLogic
             return detainedLicense.DetainedID;
 
         }
+        public bool ReleaseDetainedLicense(int ReleasedByUserID, ref int ApplicationID)
+        {
+
+            //First Create Applicaiton 
+            clsApplications Application = new clsApplications();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplications.enApplicationType.ReleaseDetainedDrivingLicsense;
+            Application.ApplicationStatus = clsApplications.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.ApplicationFees = clsApplicationTypes.FindApplicationTypeByID((int)clsApplications.enApplicationType.ReleaseDetainedDrivingLicsense).ApplicationFees;
+            Application.CreatedByUserID = ReleasedByUserID;
+
+            if (!Application.Save())
+            {
+                ApplicationID = -1;
+                return false;
+            }
+
+            ApplicationID = Application.ApplicationID;
+
+
+            return this.DetainInfo.ReleaseDetainedLicense(ReleasedByUserID, Application.ApplicationID);
+
+        } 
+
 
 
     }
