@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\applications\\international license\\controls\\ctrshowinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:applications\\international license\\controls\\ctrshowinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\applications\\international license\\controls\\ctrshowinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:applications\\international license\\controls\\ctrshowinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\licenses\\forms\\frmshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:licenses\\forms\\frmshowlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\licenses\\detain license\\forms\\managedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:licenses\\detain license\\forms\\managedetainedlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|d:\\dr.mohammed abu hadhoud\\course 19\\my dvld\\course [19] dvld  project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75212EE5-D9D6-41E0-B753-D0920805D512}|Course  19  DVLD   Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
               "RelativeDocumentMoniker": "frmMain.cs",
               "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
               "RelativeToolTip": "frmMain.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAIwJgAAAAyAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAIwGoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T14:39:58.904Z",
               "IsPinned": true,
@@ -44,7 +64,72 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrShowInternationalLicense.cs",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "RelativeDocumentMoniker": "Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "RelativeToolTip": "Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwD8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:10:41.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ctrShowInternationalLicense.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "RelativeDocumentMoniker": "Applications\\International License\\Controls\\ctrShowInternationalLicense.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Applications\\International License\\Controls\\ctrShowInternationalLicense.cs [Design]",
+              "RelativeToolTip": "Applications\\International License\\Controls\\ctrShowInternationalLicense.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:08:42.409Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmShowLicenseInfo.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Forms\\frmShowLicenseInfo.cs",
+              "RelativeDocumentMoniker": "Licenses\\Forms\\frmShowLicenseInfo.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Forms\\frmShowLicenseInfo.cs [Design]",
+              "RelativeToolTip": "Licenses\\Forms\\frmShowLicenseInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:07:33.014Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageDetainedLicenses.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Detain License\\Forms\\ManageDetainedLicenses.cs",
+              "RelativeDocumentMoniker": "Licenses\\Detain License\\Forms\\ManageDetainedLicenses.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\Licenses\\Detain License\\Forms\\ManageDetainedLicenses.cs [Design]",
+              "RelativeToolTip": "Licenses\\Detain License\\Forms\\ManageDetainedLicenses.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:07:37.17Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Dr.Mohammed Abu Hadhoud\\Course 19\\My DVLD\\Course [19] DVLD  Project\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:58:43.199Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

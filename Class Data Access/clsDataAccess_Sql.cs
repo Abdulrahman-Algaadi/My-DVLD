@@ -19,6 +19,48 @@ namespace clsDataAccess
     public class clsDataAccess_Sql
     {
 
+        public static int GetActiveInternationalLicenseIDByDriverID(int DriverID)
+        {
+            int InternationalLicenseID = -1;
+
+            SqlConnection connection = new SqlConnection(ClsConnection.ConnectionString);
+
+            string query = @"  
+                            SELECT Top 1 InternationalLicenseID
+                            FROM InternationalLicenses 
+                            where DriverID=@DriverID and GetDate() between IssueDate and ExpirationDate  
+                            order by ExpirationDate Desc;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@DriverID", DriverID);
+
+            try
+            {
+                connection.Open();
+
+                object result = command.ExecuteScalar();
+
+                if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                {
+                    InternationalLicenseID = insertedID;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+
+            }
+
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return InternationalLicenseID;
+        }
         public static byte TotalTrialsPerTest(int LocalDrivingLicenseApplicationID, int TestTypeID)
 
         {
@@ -561,7 +603,7 @@ From InternationalLicenses
 Select InternationalLicenses.InternationalLicenseID As Int_LicenseID,InternationalLicenses.ApplicationID,
 InternationalLicenses.DriverID,InternationalLicenses.IssuedUsingLocalLicenseID As L_LicenseID,
 InternationalLicenses.IssueDate,InternationalLicenses.ExpirationDate,InternationalLicenses.IsActive
-From InternationalLicenses";
+From InternationalLicenses Order By IsActive,ExpirationDate desc";
             SqlCommand Command = new SqlCommand(Query, connection);
             try
             {

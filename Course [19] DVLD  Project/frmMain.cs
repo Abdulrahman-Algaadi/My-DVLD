@@ -108,13 +108,13 @@ namespace Course__19__DVLD___Project
 
         private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new InterNationalDrivingLicense(_User);
+            Form frm = new InterNationalDrivingLicense();
             frm.ShowDialog();   
         }
 
         private void internationalDrivingLicenseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new ManageInternationalLicense(_User);
+            Form frm = new ManageInternationalLicense();
             frm.ShowDialog();
         }
 

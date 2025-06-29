@@ -92,5 +92,11 @@ namespace clsLogic
             return IsSaved;
         }
 
+        public static int GetActiveInternationalLicenseIDByDriverID(int DriverID)
+        {
+
+            return clsDataAccess_Sql.GetActiveInternationalLicenseIDByDriverID(DriverID);
+
+        }
     }
 }

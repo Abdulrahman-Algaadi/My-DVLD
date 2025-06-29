@@ -136,6 +136,9 @@
   <data name="field_date" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\field_date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="team (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\team (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vecteezy_lower-saxony-germany-2013-driving-on-german-highways-view_8672678" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_lower-saxony-germany-2013-driving-on-german-highways-view_8672678.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,6 +205,9 @@
   <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="driver-license (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver-license (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="demographic (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\demographic (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -228,6 +234,9 @@
   </data>
   <data name="teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW91" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW91.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="driver (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="member (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\member (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,14 +265,20 @@
   <data name="users_add (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_add (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="driver (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="driver (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person_man (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person_man (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="users_config" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="analize_email_sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\analize_email_sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_info (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_info (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -276,6 +291,9 @@
   </data>
   <data name="driver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\driver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hand_note1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hand_note1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -291,6 +309,9 @@
   </data>
   <data name="user_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="control" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,9 +340,6 @@
   <data name="diskette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diskette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="data (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\data (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="wallpaperflare.com_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpaperflare.com_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -346,8 +364,8 @@
   <data name="eye (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flight_attendant_male (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flight_attendant_male (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new-product (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new-product (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="white_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,6 +379,9 @@
   <data name="view_detail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view_detail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user-gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -369,6 +390,9 @@
   </data>
   <data name="password (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flight_attendant_male (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flight_attendant_male (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sign_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sign_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,8 +406,8 @@
   <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="data (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,14 +424,23 @@
   <data name="person_man (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person_man (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="driver (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="allow_list (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\allow_list (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person_man (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person_man (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="new-product (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new-product (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teacher-or-instructor-controls-quality-of-training-male-student-holds-driver-licence-happy-new-driver-after-passing-driving-test-modern-vehicle-nea-2FTBHW9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,14 +451,20 @@
   <data name="analize_email_sign1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\analize_email_sign1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="new-product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new-product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="data (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="new-product" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\new-product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="driver (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="analize_email_sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analize_email_sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="data (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,8 +484,8 @@
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hand_note1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hand_note1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="license (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\license (1)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,10 +493,10 @@
   <data name="close (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profile (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="new-product (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\new-product (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Final.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
