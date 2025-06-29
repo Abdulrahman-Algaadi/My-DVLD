@@ -120,12 +120,6 @@
     <Compile Include="ctrDetainInfo.Designer.cs">
       <DependentUpon>ctrDetainInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrDetain_Release.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ctrDetain_Release.Designer.cs">
-      <DependentUpon>ctrDetain_Release.cs</DependentUpon>
-    </Compile>
     <Compile Include="Licenses\Controls\ctrFilterLicense.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -364,9 +358,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ctrDetainInfo.resx">
       <DependentUpon>ctrDetainInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ctrDetain_Release.resx">
-      <DependentUpon>ctrDetain_Release.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Controls\ctrFilterLicense.resx">
       <DependentUpon>ctrFilterLicense.cs</DependentUpon>

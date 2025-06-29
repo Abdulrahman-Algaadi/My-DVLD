@@ -293,6 +293,23 @@ namespace clsLogic
 
             return NewLicense;
         }
+        public int Detain(decimal FineFees, int CreatedByUserID)
+        {
+            clsDetainedLicense detainedLicense = new clsDetainedLicense();
+            detainedLicense.LicenseID = this.LicenseID;
+            detainedLicense.DetainDate = DateTime.Now;
+            detainedLicense.FineFees = Convert.ToDecimal(FineFees);
+            detainedLicense.CreatedByUserID = CreatedByUserID;
+
+            if (!detainedLicense.DetainLicense())
+            {
+
+                return -1;
+            }
+
+            return detainedLicense.DetainedID;
+
+        }
 
 
     }

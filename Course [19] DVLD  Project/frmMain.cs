@@ -132,13 +132,13 @@ namespace Course__19__DVLD___Project
 
         private void detainDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new DetainLicenseScreen(_User);
+            Form frm = new DetainLicenseScreen();
             frm.ShowDialog();
         }
 
         private void detainLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form frm = new DetainLicenseScreen(_User);
+            Form frm = new DetainLicenseScreen();
             frm.ShowDialog();
         }
 

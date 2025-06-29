@@ -119,8 +119,8 @@
             // 
             // ctrShowLicenseInfo1
             // 
-        
-            this.ctrShowLicenseInfo1.Location = new System.Drawing.Point(12, 190);
+            this.ctrShowLicenseInfo1.LicenseID = 0;
+            this.ctrShowLicenseInfo1.Location = new System.Drawing.Point(20, 205);
             this.ctrShowLicenseInfo1.Name = "ctrShowLicenseInfo1";
             this.ctrShowLicenseInfo1.Size = new System.Drawing.Size(972, 378);
             this.ctrShowLicenseInfo1.TabIndex = 0;
