@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsLogger.cs" />
     <Compile Include="Tests\Forms\AddNewAppointmentTest.cs">
       <SubType>Form</SubType>
     </Compile>

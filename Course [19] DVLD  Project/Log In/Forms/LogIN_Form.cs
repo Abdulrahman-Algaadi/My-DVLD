@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,8 +29,20 @@ namespace Course__19__DVLD___Project
             
         }
 
+        public  void _logInToFile(string Message)
+        {
+            string FileName = "Log.txt";
+            string LoggedUserData = $"User Name : {clsGlobal.User.UserName} , Logged In Date Time [{DateTime.Now}]  ";
+
+            using (StreamWriter Writter =new StreamWriter(FileName,append : true))
+            {
+                Writter.WriteLine(LoggedUserData);
+            }
+
+        }
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            clsLogger LogUserToFile = new clsLogger(_logInToFile); 
             string UserName=txtUserName.Text.Trim();
             string PassWord = txtPassWord.Text.Trim();
             clsUser _User = clsUser.FindUserByUserNameAndPassWord(UserName, PassWord);
@@ -48,6 +61,9 @@ namespace Course__19__DVLD___Project
                 {
                     clsGlobal.User = _User;
                     this.Hide();
+
+                    LogUserToFile.Log("Log To File .");
+           
                     Form form = new frmMain(this);
                    
                     form.ShowDialog();
